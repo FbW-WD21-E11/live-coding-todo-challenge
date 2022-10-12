@@ -21,7 +21,7 @@ router.post('/create', async (req, res)=> {
     } catch (error) {
         return res.status(500).json({message:error.message})
     }
-})
+});
 
 //PATCH: mark a todo as done
 router.patch('/done/:id',async (req, res) => {
